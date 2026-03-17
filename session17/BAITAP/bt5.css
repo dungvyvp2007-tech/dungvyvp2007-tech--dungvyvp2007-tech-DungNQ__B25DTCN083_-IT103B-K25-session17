@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fcf6ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.card {
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #c92c2c;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.card-header h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.card-header p {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.list-item {
+    background-color: #fff8e1;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-left: 6px solid #f57c00;
+    cursor: pointer;
+}
+
+.task-checkbox {
+    margin-right: 15px;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #999;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.task-checkbox:checked {
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
+
+.task-checkbox:checked::after {
+    content: '✔';
+    color: white;
+    position: absolute;
+    font-size: 16px;
+    top: -2px;
+    left: 2px;
+}
+
+.task-text {
+    flex-grow: 1;
+    color: #333;
+    font-weight: 500;
+}
+
+.card-footer {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-size: 13px;
+    border-top: 1px solid #eee;
+}
+
+.active {
+    text-decoration: line-through;
+    opacity: 0.6;
+    background-color: #e8f5e9;
+    border-left: 6px solid #4caf50;
+}
+.add-task-container {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    background-color: #fff8e1;
+}
+
+#taskInput {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+#taskInput:focus {
+    border-color: #f57c00;
+}
+
+.add-task-container button {
+    padding: 0 20px;
+    background-color: #ff8f00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.add-task-container button:hover {
+    background-color: #e65100;
+}
+.delBtn{
+    background-color: #fff8e1;
+    border: 1px solid #fff8e1;
+    padding: 6px;
+}
+.changeBtn{
+    background-color: #fff8e1;
+    border: 1px solid #fff8e1;
+    padding: 6px;
+}
